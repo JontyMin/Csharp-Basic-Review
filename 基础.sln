@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-复杂数据类型", "01-复杂数据类型", "{E697EFBE-A376-43FB-B303-9890E21E6C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_常量", "_01、常量\_01_常量.csproj", "{3737C847-2DAD-423F-B7AF-307CDFCCBB46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3737C847-2DAD-423F-B7AF-307CDFCCBB46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3737C847-2DAD-423F-B7AF-307CDFCCBB46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3737C847-2DAD-423F-B7AF-307CDFCCBB46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3737C847-2DAD-423F-B7AF-307CDFCCBB46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3737C847-2DAD-423F-B7AF-307CDFCCBB46} = {E697EFBE-A376-43FB-B303-9890E21E6C71}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C39EE18E-EB0A-4007-B2C3-1B123AE78A2B}
+	EndGlobalSection
+EndGlobal
