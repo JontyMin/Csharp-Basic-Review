@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01_常量
+namespace _01常量
 {
     class Program
     {
         static void Main(string[] args)
         {
-
             int number = 10;
             number = 18;// 变量可以被重新复制
 
