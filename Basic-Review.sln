@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldApp", "HelloWorldApp\HelloWorldApp.csproj", "{B009D98F-7669-4595-B432-D51F7A5B0D3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorldApp", "HelloWorldApp\HelloWorldApp.csproj", "{B009D98F-7669-4595-B432-D51F7A5B0D3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "预定义数据类型", "预定义数据类型\预定义数据类型.csproj", "{5A37F426-4F59-4342-8FBB-D2A5D80E5C5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "预定义数据类型", "预定义数据类型\预定义数据类型.csproj", "{5A37F426-4F59-4342-8FBB-D2A5D80E5C5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "程序流控制", "程序流控制\程序流控制.csproj", "{5BFC9A56-A16C-4374-8EFB-69B9B9F22C90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5A37F426-4F59-4342-8FBB-D2A5D80E5C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A37F426-4F59-4342-8FBB-D2A5D80E5C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A37F426-4F59-4342-8FBB-D2A5D80E5C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BFC9A56-A16C-4374-8EFB-69B9B9F22C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BFC9A56-A16C-4374-8EFB-69B9B9F22C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BFC9A56-A16C-4374-8EFB-69B9B9F22C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BFC9A56-A16C-4374-8EFB-69B9B9F22C90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
