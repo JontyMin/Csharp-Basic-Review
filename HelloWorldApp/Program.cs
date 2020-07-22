@@ -86,6 +86,21 @@ namespace HelloWorldApp
             WriteLine(j);// 30
             WriteLine(Program.j);// 20
 
+
+            /*
+             * 常量：不会发生改变的量 const
+             * 必须在声明时初始化，指定值之后不能再改写
+             * 常量的值必须能在编译时用于计算，不能用从常量中提取的值来初始化常量，应该使用只读字段
+             * 常量是隐式静态的，不允许在声明常量时包含修饰符static
+             *
+             * 好处：
+             * 易于读取
+             * 易于修改
+             * 避免程序出现错误
+             */
+            const int a = 12; // this value cannot be changed
+
+
         }
 
         static int Show()
