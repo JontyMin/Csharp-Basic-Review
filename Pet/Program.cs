@@ -13,22 +13,29 @@ namespace Pet
     /// <summary>
     /// 宠物父类
     /// </summary>
-    public class Pet
+    public abstract class Pet
     {
-        public string name;
+        public string _name;
+
+        public Pet(string name)
+        {
+            _name = name;
+        }
 
         public void PrintName()
         {
-            Console.WriteLine($"Pet's name is {name}");
+            Console.WriteLine($"Pet's name is {_name}");
         }
 
         /// <summary>
         /// 说话 虚方法
         /// </summary>
-        public virtual void Speak()
-        {
-            Console.WriteLine("Pet is Speak");
-        }
+        // public virtual void Speak()
+        // {
+        //     Console.WriteLine("Pet is Speak");
+        // }
+
+        public abstract void Speak();
     }
 
     /// <summary>
@@ -36,15 +43,15 @@ namespace Pet
     /// </summary>
     public class Dog : Pet
     {
-        public Dog(string Name)
+        public Dog(string name):base(name)
         {
-            name = Name;
+           
         }
 
         // 隐藏方法 在派生类中声明新的带有相同函数名的成员
         public new void PrintName()
         {
-            Console.WriteLine($"宠物的名称是{name}");
+            Console.WriteLine($"宠物的名称是{_name}");
         }
 
         /// <summary>
@@ -53,7 +60,7 @@ namespace Pet
         public override void Speak()
         {
             //base.Speak();
-            Console.WriteLine($"{name} is speaking : www");
+            Console.WriteLine($"{_name} is speaking : www");
         }
     }
 
@@ -63,20 +70,35 @@ namespace Pet
         /// 构造函数
         /// </summary>
         /// <param name="Name"></param>
-        public Cat(string Name)
+        public Cat(string name):base(name)
         {
-            name = Name;
         }
         public override void Speak()
         {
             // base.Speak();
-            Console.WriteLine($"{name} is speaking : mmm");
+            Console.WriteLine($"{_name} is speaking : mmm");
         }
     }
+
+    /*
+     * 抽象类
+     * 1、抽象类只是用来被继承
+     * 不能实例化，使用abstract修饰
+     * 可以包含抽象成员和普通成员
+     * 抽象类的抽象成员在派生类中需要用override实现
+     */
+    abstract class A
+    {
+
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
+            // 不能被实例化
+            // A a = new A();
+
             // 使用基类调用 则使用基类的方法
             // 通过基类引用指向派生类，仅能访问到派生类中的基类部分
             /*
