@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "预定义数据类型", "�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "程序流控制", "程序流控制\程序流控制.csproj", "{5BFC9A56-A16C-4374-8EFB-69B9B9F22C90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "枚举", "枚举\枚举.csproj", "{64EE102B-9C1B-42D1-BFBA-CBCF071DBE2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "枚举", "枚举\枚举.csproj", "{64EE102B-9C1B-42D1-BFBA-CBCF071DBE2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "编程准则", "编程准则\编程准则.csproj", "{A3E93E62-92B9-4C14-A565-5A1912B1DDBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "编程准则", "编程准则\编程准则.csproj", "{A3E93E62-92B9-4C14-A565-5A1912B1DDBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPDemo", "OOPDemo\OOPDemo.csproj", "{14DC5E6D-907B-4958-AB49-0F1944C973CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A3E93E62-92B9-4C14-A565-5A1912B1DDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3E93E62-92B9-4C14-A565-5A1912B1DDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3E93E62-92B9-4C14-A565-5A1912B1DDBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14DC5E6D-907B-4958-AB49-0F1944C973CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14DC5E6D-907B-4958-AB49-0F1944C973CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14DC5E6D-907B-4958-AB49-0F1944C973CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14DC5E6D-907B-4958-AB49-0F1944C973CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
