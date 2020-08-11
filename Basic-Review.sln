@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "枚举", "枚举\枚举.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "编程准则", "编程准则\编程准则.csproj", "{A3E93E62-92B9-4C14-A565-5A1912B1DDBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPDemo", "OOPDemo\OOPDemo.csproj", "{14DC5E6D-907B-4958-AB49-0F1944C973CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPDemo", "OOPDemo\OOPDemo.csproj", "{14DC5E6D-907B-4958-AB49-0F1944C973CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pet", "Pet\Pet.csproj", "{8E513F9A-E1A9-47B6-BFE6-F3BF1589CA47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{14DC5E6D-907B-4958-AB49-0F1944C973CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14DC5E6D-907B-4958-AB49-0F1944C973CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14DC5E6D-907B-4958-AB49-0F1944C973CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E513F9A-E1A9-47B6-BFE6-F3BF1589CA47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E513F9A-E1A9-47B6-BFE6-F3BF1589CA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E513F9A-E1A9-47B6-BFE6-F3BF1589CA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E513F9A-E1A9-47B6-BFE6-F3BF1589CA47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
