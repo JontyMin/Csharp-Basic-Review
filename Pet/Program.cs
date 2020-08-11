@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Pet
+﻿namespace Pet
 {
     /*
      * Object是所有类的共同基类
@@ -10,75 +8,6 @@ namespace Pet
      * 单一继承
      */
 
-    /// <summary>
-    /// 宠物父类
-    /// </summary>
-    public abstract class Pet
-    {
-        public string _name;
-
-        public Pet(string name)
-        {
-            _name = name;
-        }
-
-        public void PrintName()
-        {
-            Console.WriteLine($"Pet's name is {_name}");
-        }
-
-        /// <summary>
-        /// 说话 虚方法
-        /// </summary>
-        // public virtual void Speak()
-        // {
-        //     Console.WriteLine("Pet is Speak");
-        // }
-
-        public abstract void Speak();
-    }
-
-    /// <summary>
-    ///  狗类 继承自父类Pet
-    /// </summary>
-    public class Dog : Pet
-    {
-        public Dog(string name):base(name)
-        {
-           
-        }
-
-        // 隐藏方法 在派生类中声明新的带有相同函数名的成员
-        public new void PrintName()
-        {
-            Console.WriteLine($"宠物的名称是{_name}");
-        }
-
-        /// <summary>
-        /// 重写虚方法
-        /// </summary>
-        public override void Speak()
-        {
-            //base.Speak();
-            Console.WriteLine($"{_name} is speaking : www");
-        }
-    }
-
-    public class Cat : Pet
-    {
-        /// <summary>
-        /// 构造函数
-        /// </summary>
-        /// <param name="Name"></param>
-        public Cat(string name):base(name)
-        {
-        }
-        public override void Speak()
-        {
-            // base.Speak();
-            Console.WriteLine($"{_name} is speaking : mmm");
-        }
-    }
 
     /*
      * 抽象类
@@ -117,6 +46,7 @@ namespace Pet
                 new Cat("Hao"), 
                 new Dog("Jack"),
                 new Dog("Tom"), 
+                new Labrador("heirui"), 
 
             };
 
@@ -125,6 +55,17 @@ namespace Pet
                 pet.Speak();
             }
 
+            Cat c = new Cat("Tomm");
+            // 通过对象调用
+            c.CatchMice();
+            c.ClimbTree();
+
+            // 接口调用
+            ICatchMice catchMice = (ICatchMice) c;
+            catchMice.CatchMice();
+
+            IClimbTree climbTree = (IClimbTree) c;
+            climbTree.ClimbTree();
             /*
              * 虚方法和多态
              * 虚方法：声明为virtual的方法就是虚方法
@@ -135,6 +76,14 @@ namespace Pet
              * 重写虚方法必须具有相同的可访问性，且基类方法不能是private
              * 不能重写static方法或非虚方法
              * 方法、属性、索引器、事件等都可以声明为virtual或override
+             */
+
+            /*
+             * 密闭方法
+             * 如果一个基类方法不希望子类对其重写
+             * 就可以不声明为virtual
+             * 如果是某个派生类方法不希望子类对其重写
+             * 同时是override重写，就可以使用sealed机制
              */
         }
     }
