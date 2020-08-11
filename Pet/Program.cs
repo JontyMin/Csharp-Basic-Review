@@ -10,12 +10,21 @@
 
 
     /*
-     * 抽象类
-     * 1、抽象类只是用来被继承
-     * 不能实例化，使用abstract修饰
-     * 可以包含抽象成员和普通成员
-     * 抽象类的抽象成员在派生类中需要用override实现
+     * 结构是值类型 => 栈  类是引用类型 =>堆
+     * 结构不支持继承 类支持继承
+     * 结构不能定义默认构造函数 编译器会定义
      */
+
+    struct filh
+    {
+        private int weight;
+        private int size;
+        private int type;
+    }
+
+   /// <summary>
+   /// 抽象类
+   /// </summary>
     abstract class A
     {
 
