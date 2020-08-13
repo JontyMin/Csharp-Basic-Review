@@ -37,6 +37,7 @@ namespace Pet
         //     Console.WriteLine("Pet is Speak");
         // }
 
+        // 抽象方法 没有实现
         public abstract void Speak();
     }
 }
