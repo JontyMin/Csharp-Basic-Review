@@ -1,4 +1,6 @@
-﻿namespace Pet
+﻿using System;
+
+namespace Pet
 {
     /*
      * Object是所有类的共同基类
@@ -97,6 +99,13 @@
 
 
             Dog.ShowNum();
+
+            Dog dog = new Dog("Tommy");
+
+            // Dog类的扩展方法
+            dog.HowToFeedDog();
         }
+
+        
     }
 }

@@ -59,4 +59,15 @@ namespace Pet
             Console.WriteLine($"{_name} is speaking : www");
         }
     }
+
+    /// <summary>
+    /// 静态类 扩展方法
+    /// </summary>
+    static class PetGuide
+    {
+        public static void HowToFeedDog(this Dog dog)
+        {
+            Console.WriteLine("How to feed a Dog");
+        }
+    }
 }

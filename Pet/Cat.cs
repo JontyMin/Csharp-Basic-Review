@@ -2,6 +2,14 @@
 
 namespace Pet
 {
+    /*
+     * 如果类只包含静态的方法和属性，并且标识为static
+     * 静态类不能创建实例，不能被继承
+     * 可以为静态类定义一个静态构造函数
+     * 主要用于基础类库和扩展方法
+     *
+     * 扩展方法
+     */
     public class Cat : Pet,ICatchMice,IClimbTree
     {
         /// <summary>
