@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Runtime.CompilerServices;
 
 namespace Pet
 {
@@ -10,19 +10,18 @@ namespace Pet
      * 单一继承
      */
 
-
     /*
      * 结构是值类型 => 栈  类是引用类型 =>堆
      * 结构不支持继承 类支持继承
      * 结构不能定义默认构造函数 编译器会定义
      */
 
-    struct filh
+    /*struct filh
     {
         private int weight;
         private int size;
         private int type;
-    }
+    }*/
 
    /// <summary>
    /// 抽象类
@@ -32,7 +31,7 @@ namespace Pet
 
     }
 
-    class Program
+   class Program
     {
         static void Main(string[] args)
         {
@@ -51,6 +50,7 @@ namespace Pet
             cat.Speak();
             */
 
+            /*
             Pet[] pets = new Pet[]
             {
                 new Cat("Jack"),
@@ -97,13 +97,63 @@ namespace Pet
              * 同时是override重写，就可以使用sealed机制
              */
 
-
+            /*
             Dog.ShowNum();
 
             Dog dog = new Dog("Tommy");
 
             // Dog类的扩展方法
             dog.HowToFeedDog();
+
+
+            {
+
+                // 装箱 => 值类型转换成引用类型 堆  隐式转换
+                // 装箱的本质就是在堆上创建了引用类型，新创建的引用类型和原来的值类型相互独立
+                int i = 3;
+                object oi = i;
+                Console.WriteLine($"i={i},oi={oi}");
+
+                oi = 10;
+                i = 7;
+                Console.WriteLine($"i={i},oi={oi}");
+
+                // 拆箱 => 将拆箱后的对象转换回值类型的过程 显示转换
+
+                int j = (int)oi;
+
+                Console.WriteLine($"j={j},oi={oi}");
+
+            }
+
+            /*
+             * 自定义转换 => 为结构和类定义显示和隐式转换
+             * 
+             *
+             */
+            /*
+            Dog d = new Dog("ktg");
+            d.Speak();
+
+            // 隐式换成猫
+            Cat cc = d;
+            cc.Speak();
+
+            Dog dd = (Dog) cc;
+            dd.Speak();
+            */
+
+            var dogCage = new Cage<Dog>(3);
+            dogCage.Putin(new Dog("java"));
+            dogCage.Putin(new Dog("go"));
+            dogCage.Putin(new Labrador("python"));
+
+            var dog = dogCage.TakeOut();
+            dog.PrintName();
+
+            var d = new Dog("has");
+            d.isHappy<Cat>(new Cat("kaf"));
+
         }
 
         

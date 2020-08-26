@@ -34,5 +34,14 @@ namespace Pet
         {
             Console.WriteLine($"{_name} Climb Tree");
         }
+
+        /// <summary>
+        /// 显示转换
+        /// </summary>
+        /// <param name="cat"></param>
+        public static explicit operator Dog(Cat cat)
+        {
+            return new Dog(cat._name);
+        }
     }
 }

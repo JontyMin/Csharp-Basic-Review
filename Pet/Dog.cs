@@ -58,6 +58,21 @@ namespace Pet
             //base.Speak();
             Console.WriteLine($"{_name} is speaking : www");
         }
+
+        /// <summary>
+        /// 隐式转换
+        /// </summary>
+        /// <param name="dog"></param>
+        public static implicit operator Cat(Dog dog)
+        {
+            return new Cat(dog._name);
+        }
+
+        public void isHappy<T>(T target) where T:Pet
+        {
+            Console.WriteLine("Happy:");
+            target.PrintName();
+        }
     }
 
     /// <summary>
