@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="CommonMethod.cs" />
     <Compile Include="Constraint.cs" />
+    <Compile Include="Extend\CCTest.cs" />
     <Compile Include="Generic.cs" />
     <Compile Include="GenericMethod.cs" />
     <Compile Include="Model.cs" />
@@ -55,5 +56,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
