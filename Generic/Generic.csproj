@@ -46,6 +46,7 @@
     <Compile Include="CommonMethod.cs" />
     <Compile Include="Constraint.cs" />
     <Compile Include="Extend\CCTest.cs" />
+    <Compile Include="Extend\GenericCacheTest.cs" />
     <Compile Include="Generic.cs" />
     <Compile Include="GenericMethod.cs" />
     <Compile Include="Model.cs" />
