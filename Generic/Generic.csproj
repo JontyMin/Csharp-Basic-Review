@@ -44,7 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonMethod.cs" />
+    <Compile Include="Constraint.cs" />
+    <Compile Include="Generic.cs" />
     <Compile Include="GenericMethod.cs" />
+    <Compile Include="Model.cs" />
     <Compile Include="Monitor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

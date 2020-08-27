@@ -12,7 +12,6 @@ namespace Generic
         {
             try
             {
-
                 Console.WriteLine(typeof(List<>));//`1 占位符 1个参数
                 Console.WriteLine(typeof(Dictionary<,>));//`2
 
@@ -43,6 +42,44 @@ namespace Generic
                 // common~=generic > object
                 Monitor.Show();
 
+                Generic<int>generic = new Generic<int>()
+                {
+                    _t=123
+                };
+
+
+                {
+                    People people = new People()
+                    {
+                        Id = 12,
+                        Name = "走自己的路"
+                    };
+                    Chinese chinese = new Chinese()
+                    {
+                        Id = 34,
+                        Name = "Jonty"
+                    };
+                    HuNan huNan = new HuNan()
+                    {
+                        Id = 45,
+                        Name="长沙"
+                    };
+                    Japanese japanese =  new Japanese()
+                    {
+                        Id = 56,
+                        Name = "波多"
+                    };
+
+                    CommonMethod.ShowObject(people);
+                    CommonMethod.ShowObject(chinese);
+                    CommonMethod.ShowObject(huNan);
+                    CommonMethod.ShowObject(japanese);
+
+                    GenericMethod.Show(people);
+                    GenericMethod.Show(chinese);
+                    GenericMethod.Show(huNan);
+                    GenericMethod.Show(japanese);
+                }
             }
             catch (Exception e)
             {
