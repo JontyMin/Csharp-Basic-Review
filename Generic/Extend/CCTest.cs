@@ -9,7 +9,8 @@ namespace Generic.Extend
     /// 只能放在接口或者委托的泛型参数里面
     /// out 协变covariant 修饰返回值
     /// in 逆变contravariant 修饰传入的参数
-    /// 参考：https://www.cnblogs.com/wangbaicheng1477865665/p/OutIn.html
+    /// 逆变和协变只能放在泛型接口和泛型委托的泛型参数里
+    /// <see cref="https://www.cnblogs.com/wangbaicheng1477865665/p/OutIn.html"/>
     /// </summary>
     public class CCTest
     {
@@ -34,9 +35,12 @@ namespace Generic.Extend
                 IEnumerable<Bird>birds1=new List<Sparrow>();
                 Func<Bird> func = new Func<Sparrow>(() => null);
 
+                //这是能编译的
+                ICustomerListOut<Bird> customerList1 = new CustomerListOut<Bird>();
 
-                ICustomerListOut<Bird> customerList1 = new CustomerListOut<Bird>();//这是能编译的
-                ICustomerListOut<Bird> customerList2 = new CustomerListOut<Sparrow>();//这也是能编译的，在泛型中，子类指向父类，我们称为协变
+                //这也是能编译的，在泛型中，子类指向父类，我们称为协变
+                ICustomerListOut<Bird> customerList2 = new CustomerListOut<Sparrow>();
+                
             }
 
             {
@@ -55,7 +59,7 @@ namespace Generic.Extend
     }
 
     /// <summary>
-    /// 逆变
+    /// 逆变 参数不能作为返回值
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public interface ICustomerListIn<in T>
@@ -67,11 +71,6 @@ namespace Generic.Extend
 
     public class CustomerListIn<T> : ICustomerListIn<T>
     {
-        public T Get()
-        {
-            return default(T);
-        }
-
         public void Show(T t)
         {
         }
@@ -80,6 +79,7 @@ namespace Generic.Extend
 
     /// <summary>
     /// out 协变 只能是返回结果
+    /// 协变就是让泛型有子父级关系
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public interface ICustomerListOut<out T>
@@ -99,10 +99,8 @@ namespace Generic.Extend
         {
             return default(T);
         }
-
         public void Show(T t)
         {
-
         }
     }
     /// <summary>
