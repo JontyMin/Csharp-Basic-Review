@@ -21,6 +21,7 @@ namespace Reflection
             try
             {
 
+                /*
                 {
                     Console.WriteLine("*********common************");
                     IDBHelper iDbHelper = new MySQLHelper();
@@ -91,7 +92,66 @@ namespace Reflection
 
                     }
 
+                    {
+                        // 有参构造函数
+                        Assembly assembly = Assembly.Load("DB.SqlServer");
+                        Type type = assembly.GetType("DB.SqlServer.ReflectionTest");
+                        object oReflectionTest1 = Activator.CreateInstance(type);
+                        object oReflectionTest2 = Activator.CreateInstance(type,new object[]{123});
+                        object oReflectionTest3 = Activator.CreateInstance(type,new object[]{"123"});
+                    }
+
+                    {
+                        // 泛型
+                        Assembly assembly = Assembly.Load("DB.SqlServer");
+                        Type type = assembly.GetType("DB.SqlServer.GenericTest`3");
+                        // object oGeneric = Activator.CreateInstance(type);
+                        Type newType = type.MakeGenericType(new Type[] {typeof(int), typeof(string), typeof(DateTime)});
+                        object oGeneric = Activator.CreateInstance(newType);
+
+                    }
+                } 
+                {
+                    Console.WriteLine("*********Reflection+Method****************");
+                    Assembly assembly = Assembly.Load("DB.SqlServer");
+                    Type type = assembly.GetType("DB.SqlServer.ReflectionTest");
+                    object oReflectionTest = Activator.CreateInstance(type);
+                    {
+                        MethodInfo method = type.GetMethod("Show1");
+                        method.Invoke(oReflectionTest, null);
+                    }
+                    {
+                        MethodInfo method = type.GetMethod("Show2");
+                        method.Invoke(oReflectionTest, new object[]{123});
+                    }
+                    {
+                        MethodInfo method = type.GetMethod("Show5");
+                        method.Invoke(oReflectionTest, new object[]{"WebApi实践"});
+                        // 可以没有实例
+                        method.Invoke(null, new object[]{"WebApi实践"});
+                    }
+                    {
+                        MethodInfo method = type.GetMethod("Show3", new Type[] {typeof(int) ,typeof(string)});
+                        method.Invoke(oReflectionTest, new object[] {123,"Jonty"});
+                    }
+                    {
+                        // 私有方法
+                        MethodInfo method = type.GetMethod("Show4",BindingFlags.Instance|BindingFlags.NonPublic);
+                        method.Invoke(oReflectionTest, new object[]{"Jonty"});
+                    }
+
+                }*/
+                {
+                    // 泛型
+                    Assembly assembly = Assembly.Load("DB.SqlServer");
+                    Type type = assembly.GetType("DB.SqlServer.GenericDouble`1");
+                    Type newType = type.MakeGenericType(new Type[] { typeof(int) });
+                    object oGeneric = Activator.CreateInstance(newType);
+                    MethodInfo method = newType.GetMethod("Show");
+                    MethodInfo newMethod = method.MakeGenericMethod(new Type[] {typeof(string), typeof(DateTime)});
+                    newMethod.Invoke(oGeneric, new object[] {123, "杀手", DateTime.Now});
                 }
+
             }
             catch (Exception e)
             {
