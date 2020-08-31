@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{75D3BD43-3851-4F11-8E60-7DE00CA39A2C}</ProjectGuid>
+    <ProjectGuid>{CC334B9B-1853-4704-8C10-602B1FAD5A5D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DB.SqlServer</RootNamespace>
-    <AssemblyName>DB.SqlServer</AssemblyName>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,21 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GenericTest.cs" />
+    <Compile Include="People.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReflectionTest.cs" />
-    <Compile Include="Singleton.cs" />
-    <Compile Include="SqlServerHelper.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DB.Interface\DB.Interface.csproj">
-      <Project>{6afd0714-48e0-455e-8c90-8121a3bdcb20}</Project>
-      <Name>DB.Interface</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{cc334b9b-1853-4704-8c10-602b1fad5a5d}</Project>
-      <Name>Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

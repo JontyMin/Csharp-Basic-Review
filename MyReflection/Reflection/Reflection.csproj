@@ -64,6 +64,10 @@
       <Project>{75d3bd43-3851-4f11-8e60-7de00ca39a2c}</Project>
       <Name>DB.SqlServer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{cc334b9b-1853-4704-8c10-602b1fad5a5d}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
