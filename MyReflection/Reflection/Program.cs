@@ -13,7 +13,10 @@ namespace Reflection
 {
     /// <summary>
     /// 反射：System.Reflection .Net框架类库，可以读取并使用metadata
-    /// 
+    /// 反射优点：动态
+    ///     缺点：1.复杂
+    ///          2.避开编译器检查
+    ///          3.性能问题
     /// </summary>
     class Program
     {
@@ -246,7 +249,7 @@ namespace Reflection
 
                     }
                 }
-                */
+                
                 {
                     People people = new People();
 
@@ -309,8 +312,11 @@ namespace Reflection
                    
 
                 }
+                */
 
                 #endregion
+
+                Monitor.Show();
             }
             catch (Exception e)
             {

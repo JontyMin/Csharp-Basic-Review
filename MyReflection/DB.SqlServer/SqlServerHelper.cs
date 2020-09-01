@@ -7,12 +7,12 @@ namespace DB.SqlServer
     {
         public SqlServerHelper()
         {
-            Console.WriteLine($"{this.GetType().Name}被构造");
+            //Console.WriteLine($"{this.GetType().Name}被构造");
 
         }
         public void Query()
         {
-            Console.WriteLine($"{this.GetType().Name}.Query");
+            //Console.WriteLine($"{this.GetType().Name}.Query");
 
         }
     }

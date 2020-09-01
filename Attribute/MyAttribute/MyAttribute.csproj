@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{71067294-34DA-4859-82EF-E706239A2371}</ProjectGuid>
+    <ProjectGuid>{36EF3CCF-D007-4BFB-9710-1534A1B18246}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Reflection</RootNamespace>
-    <AssemblyName>Reflection</AssemblyName>
+    <RootNamespace>MyAttribute</RootNamespace>
+    <AssemblyName>MyAttribute</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,7 +34,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,31 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Factory.cs" />
-    <Compile Include="Monitor.cs" />
+    <Compile Include="CustomAttribute.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DB.Interface\DB.Interface.csproj">
-      <Project>{6afd0714-48e0-455e-8c90-8121a3bdcb20}</Project>
-      <Name>DB.Interface</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DB.MySQL\DB.MySQL.csproj">
-      <Project>{1f225d5d-59bd-4e27-b2c0-56f04fe013ee}</Project>
-      <Name>DB.MySQL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DB.SqlServer\DB.SqlServer.csproj">
-      <Project>{75d3bd43-3851-4f11-8e60-7de00ca39a2c}</Project>
-      <Name>DB.SqlServer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{cc334b9b-1853-4704-8c10-602b1fad5a5d}</Project>
-      <Name>Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

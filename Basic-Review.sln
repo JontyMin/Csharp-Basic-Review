@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB.Oracle", "MyReflection\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "MyReflection\Model\Model.csproj", "{CC334B9B-1853-4704-8C10-602B1FAD5A5D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Attribute", "Attribute", "{257F7071-CB53-4746-BD7A-14B6F85C4D6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAttribute", "Attribute\MyAttribute\MyAttribute.csproj", "{36EF3CCF-D007-4BFB-9710-1534A1B18246}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +99,10 @@ Global
 		{CC334B9B-1853-4704-8C10-602B1FAD5A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC334B9B-1853-4704-8C10-602B1FAD5A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC334B9B-1853-4704-8C10-602B1FAD5A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36EF3CCF-D007-4BFB-9710-1534A1B18246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36EF3CCF-D007-4BFB-9710-1534A1B18246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36EF3CCF-D007-4BFB-9710-1534A1B18246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36EF3CCF-D007-4BFB-9710-1534A1B18246}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +114,7 @@ Global
 		{75D3BD43-3851-4F11-8E60-7DE00CA39A2C} = {CB7F0A8E-C673-4235-B270-627CDA9818FE}
 		{C3E8B1DE-F962-48BF-AC61-9368BE2A8635} = {CB7F0A8E-C673-4235-B270-627CDA9818FE}
 		{CC334B9B-1853-4704-8C10-602B1FAD5A5D} = {CB7F0A8E-C673-4235-B270-627CDA9818FE}
+		{36EF3CCF-D007-4BFB-9710-1534A1B18246} = {257F7071-CB53-4746-BD7A-14B6F85C4D6F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C39EE18E-EB0A-4007-B2C3-1B123AE78A2B}
