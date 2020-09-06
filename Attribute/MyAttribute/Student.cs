@@ -1,4 +1,5 @@
 ﻿using System;
+using MyAttribute.Extension;
 
 namespace MyAttribute
 {
@@ -11,6 +12,8 @@ namespace MyAttribute
         public int Id { get; set; }
         public string Name { get; set; }
 
+        [Long(10000,999999)]
+        public long QQ { get; set; }
         public void Study()
         {
             Console.WriteLine($"这里是{this.Name}同学");
