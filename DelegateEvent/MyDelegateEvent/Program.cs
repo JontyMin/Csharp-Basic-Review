@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MyDelegateEvent.DelegateExtend;
 
 namespace MyDelegateEvent
 {
@@ -10,6 +11,13 @@ namespace MyDelegateEvent
     {
         static void Main(string[] args)
         {
+            MyDelegate myDelegate=new MyDelegate();
+            myDelegate.Show();
+
+            ListExtend list = new ListExtend();
+            list.Show();
+
+            
         }
     }
 }
