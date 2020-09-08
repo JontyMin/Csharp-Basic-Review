@@ -58,6 +58,31 @@ namespace MyDelegateEvent
                 this.DoNothing();
             }
 
+            {
+                // 多种实例化方式
+                NoReturnNoPara noPara = new NoReturnNoPara(this.DoNothing);
+
+                NoReturnNoPara noPara1 = new NoReturnNoPara(DoNothingStatic);
+
+                NoReturnNoPara noPara2 = new NoReturnNoPara(Student.StudyAdvanced);
+
+                NoReturnNoPara noPara3 = new NoReturnNoPara(new Student().Study);
+
+                
+            }
+
+            {
+                // 多播委托：一个变量保存多个方法，可以增减，Invoke时按顺序执行
+                // 不能异步
+
+                // +=为委托实例按顺序增加方法 形成方法链 Invoke时按照顺序执行
+                NoReturnNoPara noPara = new NoReturnNoPara(this.DoNothing);
+                noPara+=new NoReturnNoPara(this.DoNothing);
+                noPara += new NoReturnNoPara(DoNothingStatic);
+
+                noPara.Invoke();
+            }
+
         }
 
         private void DoNothing()
