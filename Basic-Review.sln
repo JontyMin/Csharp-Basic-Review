@@ -57,6 +57,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DelegateEvent", "DelegateEv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDelegateEvent", "DelegateEvent\MyDelegateEvent\MyDelegateEvent.csproj", "{21892B5D-93A4-4DB0-B719-709EA344747C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IOSerialize", "IOSerialize", "{864939F9-A18C-4980-90B8-8A57071B8A31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyIOSerialize", "IOSerialize\MyIOSerialize\MyIOSerialize.csproj", "{DD938D87-D249-4BB3-995B-F791C348F6BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +151,10 @@ Global
 		{21892B5D-93A4-4DB0-B719-709EA344747C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21892B5D-93A4-4DB0-B719-709EA344747C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21892B5D-93A4-4DB0-B719-709EA344747C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD938D87-D249-4BB3-995B-F791C348F6BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD938D87-D249-4BB3-995B-F791C348F6BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD938D87-D249-4BB3-995B-F791C348F6BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD938D87-D249-4BB3-995B-F791C348F6BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -168,6 +176,7 @@ Global
 		{4E148A8D-BA8D-49E8-B49D-D08140607C0A} = {52301BCC-A5B0-40DD-8E50-C49436D6E0A0}
 		{A2543837-F729-4C4C-AF65-BEA234ABAC95} = {52301BCC-A5B0-40DD-8E50-C49436D6E0A0}
 		{21892B5D-93A4-4DB0-B719-709EA344747C} = {6D69A83E-497C-42AB-958A-2AA858321B21}
+		{DD938D87-D249-4BB3-995B-F791C348F6BC} = {864939F9-A18C-4980-90B8-8A57071B8A31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C39EE18E-EB0A-4007-B2C3-1B123AE78A2B}
